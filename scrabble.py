@@ -13,18 +13,20 @@ class Scrabble(Score):
         for i in self.word:
             # Turns the word into lowercase
             i = i.lower()
-            #adds the score based on each letter
-            total_score = total_score + self.score[i]
+            # Adds the score onto the total score based on each letter
+            total_score += self.score[i]
         return total_score
 
+# Main allows us to run the code without the need of importing the class
+# in another .py file
 def main():
     # Asks the player to input a word
     word = input("Please provide a word\n=> ")
 
-    # Assigning an object to the class to begin the process
+    # Assigning an object to the class
     game = Scrabble(word.lower())
 
-    # Prints the total score for the word
+    # Prints the total score for the inputted word
     print(f"Word Scored: {game.scrabble_score()} points")
 
 
