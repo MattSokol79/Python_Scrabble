@@ -11,4 +11,4 @@
 - J, X                         ----> 8
 - Q, Z                         ----> 10
 
-[Task Complete]()
+[Task Complete](https://github.com/MattSokol79/Python_Scrabble/blob/main/scrabble.py)
